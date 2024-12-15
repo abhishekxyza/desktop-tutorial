@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVA - Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AVA - Women Safety Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="registration-form-container">
+            <h2>Register for AVA</h2>
+            <p class="instruction">Fill out the form below to join our platform and enhance your safety. All fields are required.</p>
+            <form action="submit_registration.php" method="POST">
+                <label for="full-name">Full Name:</label><br><br>
+                <input type="text" id="full-name" name="full_name" required><br><br><br><br>
+                
+                <label for="email">Email Address:</label><br><br><br><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <br><br>
+                <label for="password">Password:</label><br><br><br><br>
+                <input type="password" id="password" name="password" required><br><br><br><br>
+                
+                <label for="confirm-password">Confirm Password:</label><br><br><br><br>
+                <input type="password" id="confirm-password" name="confirm_password" required><br><br><br><br>
+                
+                <label for="phone">Phone Number:</label><br><br><br><br>
+                <input type="tel" id="phone" name="phone" required><br><br><br><br>
+                
+                <label for="emergency-contact">Emergency Contact Number:</label><br><br><br><br>
+                <input type="tel" id="emergency-contact" name="emergency_contact" required><br><br>
+                
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 AVA - Women Safety Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>
